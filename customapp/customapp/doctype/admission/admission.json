@@ -1,0 +1,313 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:ADM-2024-2025-{####}",
+ "color": "red",
+ "creation": "2024-08-03 08:59:08.912217",
+ "doctype": "DocType",
+ "document_type": "System",
+ "engine": "InnoDB",
+ "field_order": [
+  "details_tab",
+  "basic_details_section",
+  "first_name",
+  "last_name",
+  "mail_id",
+  "column_break_ykke",
+  "dob",
+  "gender",
+  "mobile_number",
+  "communication_details_section",
+  "door_no",
+  "street_name",
+  "area_town",
+  "admission_incharge",
+  "color",
+  "column_break_phzx",
+  "pincode",
+  "state",
+  "district",
+  "pin_your_location",
+  "tab_2_tab",
+  "educational_details_section",
+  "edu_details",
+  "experience_details_section",
+  "table_bdwl",
+  "amended_from",
+  "upload_tab",
+  "upload_photo__resume_section",
+  "upload_resume",
+  "upload_image",
+  "barcode",
+  "signature",
+  "submit",
+  "lft",
+  "rgt",
+  "is_group",
+  "old_parent",
+  "parent_admission"
+ ],
+ "fields": [
+  {
+   "fieldname": "details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Details"
+  },
+  {
+   "bold": 1,
+   "fieldname": "basic_details_section",
+   "fieldtype": "Section Break",
+   "label": "BASIC DETAILS"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "mail_id",
+   "fieldtype": "Data",
+   "label": "Mail Id"
+  },
+  {
+   "fieldname": "column_break_ykke",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "in_standard_filter": 1,
+   "label": "DOB",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "first_name.gender",
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Phone",
+   "label": "Mobile Number"
+  },
+  {
+   "fieldname": "communication_details_section",
+   "fieldtype": "Section Break",
+   "label": "Communication Details"
+  },
+  {
+   "fieldname": "door_no",
+   "fieldtype": "Data",
+   "label": "Door No"
+  },
+  {
+   "fieldname": "street_name",
+   "fieldtype": "Data",
+   "label": "Street Name"
+  },
+  {
+   "fieldname": "area_town",
+   "fieldtype": "Data",
+   "label": "Area/ Town"
+  },
+  {
+   "fieldname": "admission_incharge",
+   "fieldtype": "Table MultiSelect",
+   "label": "Admission Incharge",
+   "options": "ad incharge"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Color",
+   "label": "Color"
+  },
+  {
+   "fieldname": "column_break_phzx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pincode",
+   "fieldtype": "Autocomplete",
+   "label": "Pincode"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "state"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "district"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "pin_your_location",
+   "fieldtype": "Geolocation",
+   "label": "Pin your Location",
+   "print_hide": 1,
+   "report_hide": 1
+  },
+  {
+   "fieldname": "tab_2_tab",
+   "fieldtype": "Tab Break",
+   "label": "Education & Experience"
+  },
+  {
+   "fieldname": "educational_details_section",
+   "fieldtype": "Section Break",
+   "label": "Educational Details"
+  },
+  {
+   "description": "Please enter your Higher Qualification first",
+   "fieldname": "edu_details",
+   "fieldtype": "Table",
+   "label": "College",
+   "no_copy": 1,
+   "options": "Education"
+  },
+  {
+   "fieldname": "experience_details_section",
+   "fieldtype": "Section Break",
+   "label": "Experience Details"
+  },
+  {
+   "fieldname": "table_bdwl",
+   "fieldtype": "Table",
+   "options": "Experience"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Small Text",
+   "label": "Any other Significant Contribution / Achievement",
+   "no_copy": 1,
+   "options": "Admission",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "upload_tab",
+   "fieldtype": "Tab Break",
+   "label": "Upload"
+  },
+  {
+   "fieldname": "upload_photo__resume_section",
+   "fieldtype": "Section Break",
+   "label": "Upload Photo / Resume"
+  },
+  {
+   "fieldname": "upload_resume",
+   "fieldtype": "Attach",
+   "label": "Upload Resume",
+   "reqd": 1
+  },
+  {
+   "fieldname": "upload_image",
+   "fieldtype": "Attach Image",
+   "label": "Upload Image"
+  },
+  {
+   "fieldname": "barcode",
+   "fieldtype": "Barcode",
+   "label": "Registration Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Signature",
+   "label": "Signature"
+  },
+  {
+   "description": "1. I hereby declare that the entries made by me in the Application Form are complete and true to the best of my knowledge, belief and information. \n2. I hereby undertake to present the original documents for verification immediately upon demand by the concerned authorities of the Institute.\n",
+   "fieldname": "submit",
+   "fieldtype": "Button",
+   "label": "SUBMIT"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "Admission"
+  },
+  {
+   "fieldname": "parent_admission",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Parent Admission",
+   "options": "Admission"
+  }
+ ],
+ "image_field": "upload_image",
+ "index_web_pages_for_search": 1,
+ "is_calendar_and_gantt": 1,
+ "is_submittable": 1,
+ "is_tree": 1,
+ "links": [],
+ "modified": "2024-08-09 12:38:29.242086",
+ "modified_by": "Administrator",
+ "module": "Customapp",
+ "name": "Admission",
+ "naming_rule": "Expression",
+ "nsm_parent_field": "parent_admission",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "queue_in_background": 1,
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Green",
+   "title": "Submitted"
+  }
+ ],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

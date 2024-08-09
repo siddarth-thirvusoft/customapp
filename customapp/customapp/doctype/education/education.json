@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-03 10:40:06.555305",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "educational_details_section",
+  "educational_institutions",
+  "degree",
+  "passedout",
+  "percentage"
+ ],
+ "fields": [
+  {
+   "fieldname": "educational_details_section",
+   "fieldtype": "Section Break",
+   "label": "Educational Details"
+  },
+  {
+   "fieldname": "educational_institutions",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Educational Institutions"
+  },
+  {
+   "fieldname": "degree",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Degree"
+  },
+  {
+   "fieldname": "passedout",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Passedout"
+  },
+  {
+   "fieldname": "percentage",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Percentage",
+   "precision": "2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-09 12:39:45.843989",
+ "modified_by": "Administrator",
+ "module": "Customapp",
+ "name": "Education",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
